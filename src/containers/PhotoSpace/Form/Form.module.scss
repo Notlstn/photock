@@ -1,0 +1,55 @@
+.Form {
+    width: 430px;
+    margin: 0 auto;
+}
+
+.FormButton {
+    height: 36px;
+    color: #fff;
+    margin: 10px;
+    width: calc(100% - 20px);
+    background: #2ec4b6;
+    box-shadow: 2px 2px 0 #e71d36;
+    border: 1px solid #e71d36;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background: #e71d36;
+        box-shadow: 2px 2px 0 #54cec2;
+        border: 1px solid #2ec4b6;
+        cursor: pointer;
+    }
+
+    &:disabled,
+    &[disabled] {
+        background: lighten(#e71d36, 25%);
+        box-shadow: 2px 2px 0 lighten(#2ec4b6, 25%);
+        border: 1px solid lighten(#2ec4b6, 25%);
+    }
+}
+
+.Input,
+.Select {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    height: 36px;
+    background: rgba(46, 196, 182, 1);
+    box-shadow: 2px 2px 0 #e71d36;
+    border: 1px solid #e71d36;
+    color: #fff;
+    padding: 3px;
+}
+.Select option {
+    color: #fff !important;
+}
+
+.FormElement {
+    margin: 10px;
+    label {
+        display: block;
+        text-align: left;
+        margin-bottom: 8px;
+    }
+}
